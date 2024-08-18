@@ -143,7 +143,7 @@ const Service = () => {
                             Check Payments
 
                         </h2>
-                        <p>Secure the funding you need with our flexible bank loan options.</p>
+                        <p>Secure the funding you need with our flexible card or check payments options.</p>
                         <div className="card-actions justify-start">
                             <h1 className="text-[#23BE0A] hover:text-blue-500 hover:cursor-pointer">Read More...</h1>
                         </div>
