@@ -13,6 +13,7 @@ import Register from './pages/Register';
 import Login from './pages/Login';
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Service from './pages/Service/Service';
+import PrivateRoute from './Routes/PrivateRoute';
 
 const queryClient = new QueryClient();
 
@@ -35,7 +36,7 @@ const router = createBrowserRouter([
       },
       {
         path:'/service',
-        element:<Service></Service>
+        element:<PrivateRoute><Service></Service></PrivateRoute>
       }
     ],
   },
