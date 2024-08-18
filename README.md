@@ -7,7 +7,7 @@
 
 ## Technologies
 
-- **html** - **css** - **JavaScript** - **react** - **tailwind** - **firebase** - **JWT** - **Stripe** - **node** - **express** - **mongoDB**
+- **html** - **css** - **JavaScript** - **react** - **tailwind** - **firebase** - **node** - **express** - **mongoDB**
 
 ### Prerequisites
 
