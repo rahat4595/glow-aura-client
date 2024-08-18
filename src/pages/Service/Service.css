@@ -1,0 +1,28 @@
+.card {
+    position: relative;
+}
+
+.hovered .hover-line {
+    width: 100%;
+    height: 5px;
+    background-color: #ff5a3c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s ease-in-out; /* Add transition for smooth animation */
+}
+
+.hover-line {
+    width: 0;
+    height: 2px;
+    background-color: #ff5a3c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.custom-bg-image {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://i.ibb.co/RHqhnkM/img-4.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+

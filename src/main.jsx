@@ -12,6 +12,7 @@ import Root from './layout/Root';
 import Register from './pages/Register';
 import Login from './pages/Login';
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import Service from './pages/Service/Service';
 
 const queryClient = new QueryClient();
 
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: '/login',
         element: <Login></Login>
+      },
+      {
+        path:'/service',
+        element:<Service></Service>
       }
     ],
   },
