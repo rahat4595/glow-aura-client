@@ -113,7 +113,7 @@ const Products = () => {
                         </svg>
                     </div>
                 </div>
-                <div className="mx-auto max-w-7xl md:flex md:justify-between">
+                <div className="mx-auto max-w-7xl md:flex md:justify-between my-4">
                     {/* Brand Filter */}
                     <select
                         value={selectedBrand}

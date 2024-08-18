@@ -52,7 +52,7 @@ const Footer = () => {
 						<a rel="noopener noreferrer" href="#">Help: example@gmail.com</a>
 					</li>
 					<li>
-						<a rel="noopener noreferrer" href="#">Contact: +00123546987</a>
+						<a rel="noopener noreferrer" href="#">Contact: +001235469871456</a>
 					</li>
 				</ul>
 			</div>
