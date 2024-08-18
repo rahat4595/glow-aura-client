@@ -108,7 +108,7 @@ const Products = () => {
                 </svg>
               </div>
             </div>
-    
+            <div className="mx-auto max-w-7xl">      
             {/* Brand Filter */}
             <select
               value={selectedBrand}
@@ -156,6 +156,7 @@ const Products = () => {
               <option value="priceLowToHigh">Price: Low to High</option>
               <option value="priceHighToLow">Price: High to Low</option>
             </select>
+            </div>    
           </div>
     
           <div className="mt-20 grid md:grid-cols-3 w-10/12 gap-12 md:w-11/12 lg:w-9/12 h-auto m-auto">
