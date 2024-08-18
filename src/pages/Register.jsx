@@ -114,7 +114,7 @@ const Register = () => {
 
                 <label className="mr-1 ml-auto text-2xl text-orange-600 lg:text-2xl font-bold lg:font-semibold">Register with</label>
 
-                <button className="lg:mx-4 mx-2 h-8 w-8 rounded-full">
+                <button className="lg:mx-4 mx-2 w-8 rounded-full">
                     <FcGoogle onClick={handleGoogleLogIn} size={30} className="flex -mb-1 justify-center items-center w-full" /></button>
 
                

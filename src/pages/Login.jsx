@@ -86,7 +86,7 @@ const Login = () => {
                     <i><h1 className="lg:text-3xl text-2xl text-red-800 font-bold md:mb-4 mb-2 lg:mb-6">Please Login Now!</h1></i>
                     <label className="mr-1 text-xl lg:text-2xl font-bold lg:font-semibold">Sign in with</label>
 
-                    <button className="lg:mx-4 mx-2 h-8 w-8 rounded-full">
+                    <button className="lg:mx-4 mx-2 w-8 rounded-full">
                         <FcGoogle onClick={handleGoogleLogin} size={30} className="flex -mb-1 justify-center items-center w-full" /></button>
 
                     
