@@ -2,13 +2,13 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../provider/Context";
 import { useLocation, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
-import { FaGithub } from "react-icons/fa";
+// import { FaGithub } from "react-icons/fa";
 import { toast } from 'react-toastify';
 
 const Login = () => {
 
 
-    const { signIn, signInWithGoogle, githubLogin } = useContext(AuthContext);
+    const { signIn, signInWithGoogle, } = useContext(AuthContext);
 
     const [loginSuccess, setLoginSuccess] = useState('');
     const [loginError, setLoginError] = useState('');
@@ -61,18 +61,18 @@ const Login = () => {
     }
 
     //   github login
-    const handleGithubLogin = () => {
-        githubLogin()
-            .then(result => {
-                console.log(result.user);
-                toast.success('Logged in Successfully!')
-                //  Go to Home page after github Login
-                navigate(location?.state ? location.state : '/');
-            })
-            .catch(error => {
-                console.error(error);
-            })
-    }
+    // const handleGithubLogin = () => {
+    //     githubLogin()
+    //         .then(result => {
+    //             console.log(result.user);
+    //             toast.success('Logged in Successfully!')
+    //             //  Go to Home page after github Login
+    //             navigate(location?.state ? location.state : '/');
+    //         })
+    //         .catch(error => {
+    //             console.error(error);
+    //         })
+    // }
 
 
     return (
@@ -89,8 +89,7 @@ const Login = () => {
                     <button className="lg:mx-4 mx-2 h-8 w-8 rounded-full">
                         <FcGoogle onClick={handleGoogleLogin} size={30} className="flex -mb-1 justify-center items-center w-full" /></button>
 
-                    <button className="lg:mx-4 mx-2 h-8 w-8 rounded-full">
-                        <FaGithub onClick={handleGithubLogin} size={30} className="flex -mb-1 justify-center items-center w-full" /></button>
+                    
                 </div>
 
                 <div className="my-8 flex text-center border-b-2 border-dashed border-y-2 border-slate-300">

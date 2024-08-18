@@ -2,13 +2,13 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../provider/Context";
 import { useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
-import { FaGithub } from "react-icons/fa";
+// import { FaGithub } from "react-icons/fa";
 import { IoEye, IoEyeOff } from "react-icons/io5";
 import { toast } from 'react-toastify';
 
 const Register = () => {
 
-    const { createUser, updateUserProfile, signInWithGoogle, githubLogin } = useContext(AuthContext);
+    const { createUser, updateUserProfile, signInWithGoogle, } = useContext(AuthContext);
 
     const [registerError, setRegisterError] = useState('');
     const [registerSuccess, setRegisterSuccess] = useState('');
@@ -85,19 +85,19 @@ const Register = () => {
             })
     }
 
-    // github login
-    const handleGithubLogin = () => {
-        githubLogin()
-            .then(result => {
-                console.log(result.user);
-                toast.success('You have Registerd successfully');
-                //  Go to Home page after github Login
-                navigate(location?.state ? location.state : '/');
-            })
-            .catch(error => {
-                console.error(error);
-            })
-    }
+    // // github login
+    // const handleGithubLogin = () => {
+    //     githubLogin()
+    //         .then(result => {
+    //             console.log(result.user);
+    //             toast.success('You have Registerd successfully');
+    //             //  Go to Home page after github Login
+    //             navigate(location?.state ? location.state : '/');
+    //         })
+    //         .catch(error => {
+    //             console.error(error);
+    //         })
+    // }
 
 
 
@@ -117,8 +117,7 @@ const Register = () => {
                 <button className="lg:mx-4 mx-2 h-8 w-8 rounded-full">
                     <FcGoogle onClick={handleGoogleLogIn} size={30} className="flex -mb-1 justify-center items-center w-full" /></button>
 
-                <button className="lg:mx-4 mx-2 h-8 w-8 rounded-full">
-                    <FaGithub onClick={handleGithubLogin} size={30} className="flex -mb-1 justify-center items-center w-full" /></button>
+               
             </div>
 
             <div className="my-8 flex md:w-3/4 mx-auto  text-center border-b-2 border-dashed border-y-2 border-slate-300">
